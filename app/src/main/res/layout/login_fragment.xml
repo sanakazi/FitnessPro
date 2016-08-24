@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/spot"
+    >
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fitpro_txt"/>
+
+    <LinearLayout
+
+        android:layout_centerInParent="true"
+        android:id="@+id/firslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible" >
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:background="@drawable/button_border"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                style="@style/LoginWidget"
+                >
+                <TextView
+                    android:id="@+id/contactIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username"
+                    android:textSize="18sp"/>
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/Transparent"
+                    android:ems="10"
+                    android:textColor="@color/Gray"
+                    android:hint="ENTER EMAIL"
+                    android:textColorHint="@color/Gray"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="18sp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+            <View
+
+
+                android:layout_width="match_parent"
+
+                android:layout_height="1px"
+                android:background="#80000000"
+
+
+                />
+
+            <LinearLayout
+                style="@style/LoginWidget"
+                >
+                <TextView
+                    android:id="@+id/passwordIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password"
+                    android:textSize="18sp"/>
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/Transparent"
+                    android:hint="ENTER PASSWORD"
+                    android:textColorHint="@color/Gray"
+                    android:textColor="@color/Gray"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="18sp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/LoginWidget"
+            android:background="@drawable/rounded_button_fiticket"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="LOG IN"
+            android:textColor="#eeffffff"
+            android:textSize="15dp"/>
+        <LinearLayout
+            android:id="@+id/forgotPwd"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot password ?"
+                    android:textColor="@color/White"
+                    android:alpha="0.8"
+                    android:textSize="15sp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@+id/firslayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/faceb_ic"
+                />
+            <View
+                android:layout_gravity="center"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="@color/White"
+
+                />
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/google_ic"
+                android:alpha="0.7"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

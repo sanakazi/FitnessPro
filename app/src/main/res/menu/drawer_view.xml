@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+
+
+            android:title="SCHEDULE" />
+        <item
+
+            android:title="CUTOMERS" />
+        <!--<item
+            android:id="@+id/nav_notification_fragment"
+
+            android:title="NOTIFICATION" />
+        <item
+            android:id="@+id/nav_account_fragment"
+
+            android:title="ACCOUNT" />
+        <item
+            android:id="@+id/nav_profile_fragment"
+
+            android:title="PROFILE" />-->
+
+    </group>
+
+
+</menu>

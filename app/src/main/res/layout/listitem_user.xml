@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="5dp"
+    style="@style/cardView"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:padding="2dp"
+        android:descendantFocusability="blocksDescendants"
+        >
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/male2"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="2dp"
+                android:paddingLeft="3dp"
+                android:id="@+id/diasplayName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textAllCaps="true"
+
+                android:textColor="@color/fitproTheme"
+                />
+            <LinearLayout
+                android:paddingTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/roleName"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="3dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/userListRoleNameIcon"
+                            android:textSize="15sp"
+                            android:textColor="@color/fitproTheme"
+                            android:text="@string/roleName"
+                            />
+                        <TextView
+                            android:paddingLeft="5dp"
+                            android:id="@+id/userListRoleName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textSize="14dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_toRightOf="@id/roleName"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="3dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/contactIcon"
+                            android:textSize="15sp"
+                            android:textColor="@color/fitproTheme"
+                            android:text="@string/ContactIcon"
+                            />
+                        <TextView
+                            android:paddingLeft="5dp"
+                            android:id="@+id/listContactNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:textColor="@color/stdTextColor"
+                            />
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textColor="@color/fitproTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/userEmailIcon"
+                        android:textSize="15sp"
+                        android:text="@string/emailIcon"
+                        />
+                    <TextView
+                        android:paddingLeft="5dp"
+                        android:id="@+id/listUserEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="@color/stdTextColor"
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

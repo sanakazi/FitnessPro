@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mr">Mr.</string>
+    <string name="ms">Ms.</string>
+    <string name="members">CUSTOMERS</string>
+    <string name="app_name">Fitness Pro</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="wrong_date_warning">Please enter a valid date</string>
+    <string name="ic_products">&#xf288;</string>
+    <string name="ic_customer">&#xf007;</string>
+    <string name="ic_venue">&#xf277;</string>
+    <string name="ic_notification">&#xf0f3;</string>
+    <string name="ic_attendance">&#xf080;</string>
+    <string name="ic_customers">&#xf0c0;</string>
+    <string name="ic_reports">&#xf02d;</string>
+    <string name="ic_employee">&#xf183;</string>
+    <string name="ic_cost">&#xf0d6;</string>
+    <string name="ic_revenue">&#xf24e;</string>
+    <string name="welcome">welcome</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="ic_facebook">&#xf09a;</string>
+    <string name="ic_google">&#xf0d5;</string>
+    <string name="addressIcon">&#xf124;</string>
+    <string name="ContactIcon">&#xf095;</string>
+    <string name="priceIcon">&#xf156;</string>
+    <string name="calender">&#xf073;</string>
+    <string name="time">&#xf017;</string>
+    <string name="emailIcon">&#xf1fa;</string>
+    <string name="ic_logout">&#xf08b;</string>
+    <string name="customerAdd">&#xf055;</string>
+    <string name="username">&#xf007;</string>
+    <string name="password">&#xf023;</string>
+    <string name="classType">Class Type</string>
+    <string name="attendance">ATTENDANCE</string>
+    <string name="Role">Role</string>
+    <string name="roleName">&#xf21b;</string>
+    <string name="editButtonIcon">&#xf044;</string>
+    <string name="schedule">SCHEDULE</string>
+    <string name="ic_schedule">&#xf017;</string>
+
+    <string-array name="categoryArray">
+        <item>CARDIO</item>
+        <item>COMBAT</item>
+        <item>DANCE</item>
+        <item>PILATES</item>
+        <item>SPIN</item>
+        <item>SURF</item>
+        <item>SWIM</item>
+        <item>TONE</item>
+        <item>YOGA</item>
+        <item>ZUMBA</item>
+        <item>GYM</item>
+        <item>CRICKET</item>
+    </string-array>
+
+</resources>

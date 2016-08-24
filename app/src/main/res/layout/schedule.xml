@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/titleblue"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/BlueIvy"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCHEDULE YOUR CLASS"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_above="@+id/buttons"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/schedule"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/slotsLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:id="@+id/slot1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+                    <include layout="@layout/time_slots"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:id="@+id/slot2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+                    <include layout="@layout/time_slots"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/slot3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+                    <include layout="@layout/time_slots"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/slot4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+                    <include layout="@layout/time_slots"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/slot5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+                    <include layout="@layout/time_slots"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/slot6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+                    <include layout="@layout/time_slots"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/slot7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+                    <include layout="@layout/time_slots"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include layout="@layout/add_schedule_buttons"
+
+                />
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:visibility="visible"
+                    style="@style/successBtn"
+                    android:text="save"
+                    android:id="@+id/addSchedule"/>
+                <Button
+                    android:visibility="gone"
+                    style="@style/successBtn"
+                    android:text="update"
+                    android:id="@+id/updateSchedule"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressSchedule"/>
+
+</RelativeLayout>
